@@ -1,13 +1,13 @@
+// Write your code here
 import './index.css'
 
 const DestinationItem = props => {
-  const {destinationDetails} = props
-  const {imgUrl, name} = destinationDetails
-
+  const {placeDetails} = props
+  const {name, imgUrl} = placeDetails
   return (
-    <li className="destItem">
-      <img src={imgUrl} alt={name} className="festImg" />
-      <p className="name">{name}</p>
+    <li className="place-card">
+      <img src={imgUrl} alt={name} className="place-image" />
+      <p>{name}</p>
     </li>
   )
 }
